@@ -1,23 +1,14 @@
-function getRandomNumber() {
-  return Math.floor(Math.random() * 100);
+function generateRandomNumber() {
+    return Math.floor(Math.random() * 100);
 }
 
-function compareNumbers(input, randomNumber) {
-    console.log(input, randomNumber)
-    if (input > randomNumber) {
-        return "Too high!";
-    } else if (input < randomNumber) {
-        return "Too low!";
+function checkNumber(enteredNumber) {
+    let randomNumber = generateRandomNumber();
+    if (enteredNumber < randomNumber) {
+        return "Your guess is too low."
+    } else if (enteredNumber > randomNumber) {
+        return "Your guess is too high"
     } else {
-        return "You got it!";
+        return "Bien ouej."
     }
 }
-
-function checkInput() {
-    const input = document.getElementById("input").value;
-    const result = compareNumbers(input, randomNumber);
-    const resultElement = document.getElementById("result");
-    resultElement.innerHTML = result;
-}
-
-let randomNumber = getRandomNumber();
