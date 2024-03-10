@@ -1,22 +1,24 @@
-.input {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid #000000;
-    box-sizing: border-box;
-}
-
-.button {
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
-}
-
-.inputContainer {
+#container {
+    background-color: red;
+    width: 98vw;
+    height: 98vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
     justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: large;
+    font-weight: bold;
+}
+
+#input {
+    width: 20vw;
+}
+
+#inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
